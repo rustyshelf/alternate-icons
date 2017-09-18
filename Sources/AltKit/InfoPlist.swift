@@ -69,7 +69,7 @@ class InfoPlist {
         ]
 
         infoDictionary[InfoPlist.iconsKey] = dictionary
-
+        infoDictionary[InfoPlist.iPadIconsKey] = dictionary
     }
 
     ///
@@ -95,6 +95,7 @@ extension InfoPlist {
 
     /// The app icons dictionary.
     static var iconsKey = "CFBundleIcons"
+    static var iPadIconsKey = "CFBundleIcons~ipad"
 
     /// The primary icon dictionary.
     static var primaryIconKey = "CFBundlePrimaryIcon"
